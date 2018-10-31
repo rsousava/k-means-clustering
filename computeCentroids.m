@@ -13,10 +13,7 @@ function centroids = computeCentroids(X, idx, K)
 % Useful variables
 [m n] = size(X);
 
-% You need to return the following variables correctly.
 centroids = zeros(K, n);
-
-
 
 for i = 1:K
   sel = find(idx == i);
@@ -24,14 +21,6 @@ for i = 1:K
     centroids(i,:) = mean(X(sel,:));    
   endif
 endfor
-
-
-
-
-
-
-% =============================================================
-
 
 end
 
