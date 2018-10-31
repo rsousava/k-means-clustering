@@ -1,17 +1,16 @@
 %  K-Means Clustering
 %
-%
+
 
 %% Initialization
 clear ; close all; clc
 
 fprintf('Finding closest centroids.\n\n');
 
-% Load an example dataset that we will be using
 load('ex7data2.mat');
 
 % Select an initial set of centroids
-K = 3; % 3 Centroids
+K = 3;
 initial_centroids = [3 3; 6 2; 8 5];
 
 % Find the closest centroids for the examples using the
@@ -74,9 +73,6 @@ fprintf('\nRunning K-Means clustering on pixels from an image.\n\n');
 
 %  Load an image of a bird
 A = double(imread('bird_small.png'));
-
-% If imread does not work for you, you can try instead
-%   load ('bird_small.mat');
 
 A = A / 255; % Divide by 255 so that all values are in the range 0 - 1
 
