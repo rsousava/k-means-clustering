@@ -68,8 +68,6 @@ pause;
 %  In this exercise, you will use K-Means to compress an image. To do this,
 %  you will first run K-Means on the colors of the pixels in the image and
 %  then you will map each pixel onto its closest centroid.
-%  
-%  You should now complete the code in kMeansInitCentroids.m
 %
 
 fprintf('\nRunning K-Means clustering on pixels from an image.\n\n');

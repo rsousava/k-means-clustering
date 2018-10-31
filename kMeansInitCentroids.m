@@ -5,7 +5,6 @@ function centroids = kMeansInitCentroids(X, K)
 %   used with the K-Means on the dataset X
 %
 
-% You should return this values correctly
 centroids = zeros(K, size(X, 2));
 
 randidx = randperm(size(X,1));
